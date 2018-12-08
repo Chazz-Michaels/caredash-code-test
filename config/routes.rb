@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root to: 'main_pages#index'
+  get 'main_pages/about'
+  get 'main_pages/contact'
+  get 'main_pages/review'
 end
