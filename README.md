@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hello, this is my CareDash coding assignment.
 
-Things you may want to cover:
+It is built with Ruby on Rails
+  * Rails version 5.2.2
+  * Ruby version 2.5.1 (x86_64-linux)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You may view this project by
+  * Clone this repository
+  * Open terminal
+  * 'cd' into local project directory
+  * Enter 'rails s' command to start local server
+  * Open a browser and go to url 'localhost:3000'
