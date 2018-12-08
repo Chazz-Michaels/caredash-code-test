@@ -1,0 +1,24 @@
+.row
+  .col-sm-12.text-center.mt-3
+    .sign-up-form-header Sign Up with CareDash to Edit Your Provider Profile
+.row
+  .col-sm-12
+    %form.mt-4
+      .form-group
+        .form-header.text-right First Name:
+        %input{:name => 'firstName', :type => 'text', :class => 'form-field'}/
+      .form-group
+        .form-header Last Name:
+        %input{:name => 'lastName', :type => 'text', :class => 'form-field'}/
+      .form-group
+        .form-header Email Address:
+        %input{:name => 'email', :type => 'text', :class => 'form-field'}/
+      .form-group
+        .form-header Password:
+        %input{:name => 'password', :type => 'text', :class => 'form-field'}/
+      .form-group
+        .form-header Confirm Password:
+        %input{:name => 'passwordConfirm', :type => 'text', :class => 'form-field'}/
+      .form-group.mt-4
+        %input{:value => 'Sign Up', :type => 'submit', :class => 'form-submit-btn'}/
+        %input{:value => 'Log In', :type => 'submit', :class => 'form-submit-btn'}/
