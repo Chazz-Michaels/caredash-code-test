@@ -1,0 +1,44 @@
+#footer {
+  background: slategray;
+  min-height: 20vh;
+  padding: 2rem 0 1rem 0;
+}
+.quick-links-section {
+  background-color: tan;
+  min-width: 170px;
+  text-align: left !important;
+  display: inline-block;
+}
+.footer-header {
+  font-size: 1.2rem;
+}
+.footer-quick-link {
+  font-size: 0.9rem;
+}
+.fa {
+  font-size: 1rem !important;
+  margin: 0.8rem 0.4rem;
+  padding: 1rem;
+  color: black;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+
+  &:hover {
+    text-decoration: none;
+    color: lighten(black, 10%);
+  }
+}
+.copyright {
+  font-size: 0.6rem;
+}
+.blue {
+  background: blue;
+}
+.green {
+  background: green;
+}
+.red {
+  background: red;
+}

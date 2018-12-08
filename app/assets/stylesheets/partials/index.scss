@@ -1,3 +1,31 @@
-// Place all the styles related to the MainPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// home page styles live here
+#hero-section {
+  height: 500px;
+  padding-right: 1rem;
+  background: dodgerblue;
+}
+#sign-up-form {
+  height: 500px;
+  background: slateblue;
+}
+.reason-to-sign-up-card {
+  background-color: tomato;
+  padding: 0 2.4rem;
+}
+.reasons-to-sign-up-img {
+  width: 180px;
+  height: 180px;
+  background: yellow;
+}
+.reasons-to-sign-up-header {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+.reasons-to-sign-up-body {
+  font-size: 0.9rem;
+}
+.learn-more-btn {
+  border: 2px solid black;
+  padding: 0.4rem 1rem;
+}
