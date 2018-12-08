@@ -1,15 +1,24 @@
 .navbar {
   padding: 0 1rem;
   margin: 0;
+  background-color: $lightgray !important;
 }
 .navbar-brand {
   width: 150px;
+  margin-left: 3rem;
 }
 li.nav-item {
   margin: 0 0.4rem;
-  font-size: 0.9rem;
+}
+.dropdown-menu {
+  background-color: $lightgray;
+}
+.nav-link, .dropdown-item {
+  color: $darkblue !important;
+  transition: ease color 0.3s;
 
   &:hover {
-    //background-color: dodgerblue;
+    background-color: $white;
+    color: $green !important;
   }
 }

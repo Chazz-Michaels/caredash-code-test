@@ -1,7 +1,35 @@
+*, html, body {
+  font-family: $lato;
+  color: $darkblue;
+}
 .row {
   margin: 0;
   padding: 0;
 }
 .side-margins {
   margin: 0 1rem;
+}
+.btn-caredash-primary {
+  border: 1px solid $green;
+  padding: 0.4rem 1rem;
+  background-color: $green;
+  color: $white;
+  transition: ease background-color 0.3s, border-color 0.3s;
+
+  &:hover {
+    background-color: darken($green, 5%);
+    border-color: darken($green, 7%);
+  }
+}
+.btn-caredash-secondary {
+  border: 1px solid $darkblue;
+  padding: 0.4rem 1rem;
+  background-color: lighten($darkblue, 10%);
+  color: $white;
+  transition: ease background-color 0.3s, border-color 0.3s;
+
+  &:hover {
+    background-color: $darkblue;
+    border-color: darken($darkblue, 10%);
+  }
 }

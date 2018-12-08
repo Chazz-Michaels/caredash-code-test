@@ -1,13 +1,13 @@
 // home page styles live here
 #hero-section {
-  height: 500px;
+  height: 480px;
   padding-right: 1rem;
-  background: dodgerblue;
+  border: 2px solid $darkblue;
 }
 #sign-up-form {
-  height: 500px;
-  background: slateblue;
-  padding: 1rem;
+  height: 480px;
+  border: 2px solid $darkblue;
+  padding: 1rem 0 2rem 0;
 }
 .sign-up-form-header {
   font-size: 1.4rem;
@@ -27,8 +27,7 @@
   min-width: 220px;
 }
 .form-submit-btn {
-  margin: 0 0.8rem;
-  padding: 0.4rem 0.8rem;
+  margin: 1rem 0.8rem;
 }
 .reason-to-sign-up-card {
   background-color: tomato;
@@ -46,8 +45,4 @@
 }
 .reasons-to-sign-up-body {
   font-size: 0.9rem;
-}
-.learn-more-btn {
-  border: 2px solid black;
-  padding: 0.4rem 1rem;
 }
