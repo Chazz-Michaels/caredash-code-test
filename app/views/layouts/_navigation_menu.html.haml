@@ -1,2 +1,21 @@
-%div
-  This is my nav menu! 
+%nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  %a.navbar-brand{:href => "#"}
+    = image_tag ('logo.svg'),{:id => 'brand-logo'}
+  %button.navbar-toggler{"aria-controls" => "navbarNavDropdown", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNavDropdown", "data-toggle" => "collapse", :type => "button"}
+    %span.navbar-toggler-icon
+  #navbarNavDropdown.collapse.navbar-collapse
+    %ul.navbar-nav
+      %li.nav-item.dropdown
+        %a#navbarDropdownMenuLink.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#"}
+          Find a Specialist
+        .dropdown-menu{"aria-labelledby" => "navbarDropdownMenuLink"}
+          %a.dropdown-item{:href => "#"} Primary Care Physicians
+          %a.dropdown-item{:href => "#"} Pediatricians
+          %a.dropdown-item{:href => "#"} Optometrists
+          %a.dropdown-item{:href => "#"} Dentists
+      %li.nav-item
+        %a.nav-link{:href => "#"} About
+      %li.nav-item
+        %a.nav-link{:href => "#"} Contact
+      %li.nav-item
+        %a.nav-link{:href => "#"} Write a Review

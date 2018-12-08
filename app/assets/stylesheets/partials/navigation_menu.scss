@@ -1,0 +1,15 @@
+.navbar {
+  padding: 0 1rem;
+  margin: 0;
+}
+.navbar-brand {
+  width: 150px;
+}
+li.nav-item {
+  margin: 0 0.4rem;
+  font-size: 0.9rem;
+
+  &:hover {
+    //background-color: dodgerblue;
+  }
+}
