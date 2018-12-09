@@ -1,12 +1,12 @@
 .row.mt-3
-  .col-sm-7
+  .col-lg-7
     #hero-section{:onmouseover => 'handleMouseOverHeroSection()', :onmouseleave => 'handleMouseLeaveHeroSection()'}
       = image_tag ('doctor.png'), {:id => 'hero-pic'}
       #hero-overlay
         Find out why more and more providers are signing up today.
         .btn.btn-caredash-primary.hero-btn
           Learn More
-  .col-sm-5
+  .col-lg-5
     #sign-up-form
       = render 'main_pages/index_page/sign_up_form'
 .row.mt-5

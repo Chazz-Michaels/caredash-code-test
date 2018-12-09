@@ -45,13 +45,13 @@
     }
 %body
   .row
-    .col-sm-12.text-center.mt-3
+    .col-sm-12.text-center.mt-1
       .sign-up-form-header Sign Up with CareDash to Edit Your Provider Profile
   .row
-    .col-sm-12.mt-4
+    .col-sm-12.mt-2
       %form{:name => 'providerForm', :onsubmit => 'validateForm()'}
         .form-group
-          .form-header.text-right First Name:
+          .form-header First Name:
           %input{:name => 'firstName', :type => 'text', :class => 'form-field', :id => 'firstName', :placeholder => ' Enter your first name'}/
         .form-group
           .form-header Last Name:

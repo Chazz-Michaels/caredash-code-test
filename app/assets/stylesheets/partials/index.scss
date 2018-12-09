@@ -1,52 +1,52 @@
 // home page styles live here
 #hero-section {
-  max-height: 480px;
-  padding-right: 1rem;
+  max-height: 300px;
+  //padding-right: 1rem;
   border: 2px solid $darkblue;
   overflow: hidden;
 }
 #hero-pic {
-  //filter: grayscale(30%);
   transition: ease filter 0.6s;
+  //max-height: 400px;
+  height: 400px;
 }
 #hero-overlay {
   position: absolute;
   display: block;
-  top: 4rem;
+  top: 3rem;
   left: -30rem;
   color: $white;
   //background: yellow;
-  max-width: 350px;
-  font-size: 2.4rem;
+  max-width: 220px;
+  font-size: 1.4rem;
   font-weight: 700;
   transition: ease left 1s;
 }
 .hero-btn {
-  margin: 0.2rem 0 0 0;
+  margin: 1rem 0 0 0;
   font-size: 1.2rem;
 }
 #sign-up-form {
-  height: 480px;
+  //height: 500px;
   border: 2px solid $darkblue;
-  padding: 1rem 0 2rem 0;
-  background: $lightgray;
+  margin: 1rem 0 0 0;
+  padding: 0.4rem 0;
+  background: darken($lightgray, 10%);
 }
 .sign-up-form-header {
-  font-size: 1.4rem;
-  padding: 0 2.8rem;
+  font-size: 1.1rem;
+  padding: 0 1.2rem;
 }
 .form-group {
   width: 100%;
   text-align: center;
 }
 .form-header {
-  display: inline-block;
-  //background-color: yellow;
-  min-width: 140px;
-  text-align: right !important;
+  display: block;
+  text-align: center;
 }
-.form-field {
-  min-width: 220px;
+input {
+  text-align: center;
 }
 .form-submit-btn {
   margin: 1rem 0.8rem;
