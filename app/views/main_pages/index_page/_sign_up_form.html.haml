@@ -1,24 +1,70 @@
-.row
-  .col-sm-12.text-center.mt-3
-    .sign-up-form-header Sign Up with CareDash to Edit Your Provider Profile
-.row
-  .col-sm-12
-    %form.mt-4
-      .form-group
-        .form-header.text-right First Name:
-        %input{:name => 'firstName', :type => 'text', :class => 'form-field'}/
-      .form-group
-        .form-header Last Name:
-        %input{:name => 'lastName', :type => 'text', :class => 'form-field'}/
-      .form-group
-        .form-header Email Address:
-        %input{:name => 'email', :type => 'text', :class => 'form-field'}/
-      .form-group
-        .form-header Password:
-        %input{:name => 'password', :type => 'text', :class => 'form-field'}/
-      .form-group
-        .form-header Confirm Password:
-        %input{:name => 'passwordConfirm', :type => 'text', :class => 'form-field'}/
-      .form-group
-        %input{:value => 'Sign Up', :type => 'submit', :class => 'btn btn-caredash-primary form-submit-btn'}/
-        %input{:value => 'Log In', :type => 'submit', :class => 'btn btn-caredash-secondary form-submit-btn'}/
+%head
+  :javascript
+    validateForm = () => {
+      let firstName = document.getElementById('firstName');
+      let lastName = document.getElementById('lastName');
+      let email = document.getElementById('email');
+      let password = document.getElementById('password');
+      let passwordConfirm = document.getElementById('passwordConfirm');
+      let atPosition = email.value.indexOf('@');
+      let dotPosition = email.value.lastIndexOf('.');
+
+      if (firstName.value === '') {
+        alert('Please enter your first name.');
+        firstName.focus();
+        return false;
+      }
+      if (lastName.value === '') {
+        alert('Please enter your last name.');
+        lastName.focus();
+        return false;
+      }
+      if (email.value === '') {
+        alert('Please enter your email address.');
+        email.focus();
+        return false;
+      } else if (atPosition < 1 || ( dotPosition - atPosition < 2 )) {
+          alert("Please enter correct email address.")
+          email.focus();
+          return false;
+      }
+      if (password.value === '') {
+        alert('Please enter your password.');
+        password.focus();
+        return false;
+      }
+      if (passwordConfirm.value === '') {
+        alert('Please confirm your password.');
+        passwordConfirm.focus();
+        return false;
+      } else if (passwordConfirm.value !== password.value) {
+          alert('Please confirm that you reentered your password correctly.');
+          passwordConfirm.focus();
+          return false;
+      }
+    }
+%body
+  .row
+    .col-sm-12.text-center.mt-3
+      .sign-up-form-header Sign Up with CareDash to Edit Your Provider Profile
+  .row
+    .col-sm-12
+      %form{:name => 'providerForm', :onsubmit => 'validateForm()'}
+        .form-group
+          .form-header.text-right First Name:
+          %input{:name => 'firstName', :type => 'text', :class => 'form-field', :id => 'firstName'}/
+        .form-group
+          .form-header Last Name:
+          %input{:name => 'lastName', :type => 'text', :class => 'form-field', :id => 'lastName'}/
+        .form-group
+          .form-header Email Address:
+          %input{:name => 'email', :type => 'text', :class => 'form-field', :id => 'email'}/
+        .form-group
+          .form-header Password:
+          %input{:name => 'password', :type => 'text', :class => 'form-field', :id => 'password'}/
+        .form-group
+          .form-header Confirm Password:
+          %input{:name => 'passwordConfirm', :type => 'text', :class => 'form-field', :id => 'passwordConfirm'}/
+        .form-group
+          %input{:value => 'Sign Up', :type => 'submit', :class => 'btn btn-caredash-primary form-submit-btn'}/
+          %input{:value => 'Log In', :type => 'submit', :class => 'btn btn-caredash-secondary form-submit-btn'}/
