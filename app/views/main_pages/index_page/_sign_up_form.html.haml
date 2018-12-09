@@ -48,23 +48,23 @@
     .col-sm-12.text-center.mt-3
       .sign-up-form-header Sign Up with CareDash to Edit Your Provider Profile
   .row
-    .col-sm-12
+    .col-sm-12.mt-4
       %form{:name => 'providerForm', :onsubmit => 'validateForm()'}
         .form-group
           .form-header.text-right First Name:
-          %input{:name => 'firstName', :type => 'text', :class => 'form-field', :id => 'firstName'}/
+          %input{:name => 'firstName', :type => 'text', :class => 'form-field', :id => 'firstName', :placeholder => ' Enter your first name'}/
         .form-group
           .form-header Last Name:
-          %input{:name => 'lastName', :type => 'text', :class => 'form-field', :id => 'lastName'}/
+          %input{:name => 'lastName', :type => 'text', :class => 'form-field', :id => 'lastName', :placeholder => ' Enter your last name'}/
         .form-group
           .form-header Email Address:
-          %input{:name => 'email', :type => 'text', :class => 'form-field', :id => 'email'}/
+          %input{:name => 'email', :type => 'text', :class => 'form-field', :id => 'email', :placeholder => ' Enter your email address'}/
         .form-group
           .form-header Password:
-          %input{:name => 'password', :type => 'text', :class => 'form-field', :id => 'password'}/
+          %input{:name => 'password', :type => 'text', :class => 'form-field', :id => 'password', :placeholder => ' Enter your password'}/
         .form-group
           .form-header Confirm Password:
-          %input{:name => 'passwordConfirm', :type => 'text', :class => 'form-field', :id => 'passwordConfirm'}/
+          %input{:name => 'passwordConfirm', :type => 'text', :class => 'form-field', :id => 'passwordConfirm', :placeholder => ' Confirm your password'}/
         .form-group
           %input{:value => 'Sign Up', :type => 'submit', :class => 'btn btn-caredash-primary form-submit-btn'}/
           %input{:value => 'Log In', :type => 'submit', :class => 'btn btn-caredash-secondary form-submit-btn'}/

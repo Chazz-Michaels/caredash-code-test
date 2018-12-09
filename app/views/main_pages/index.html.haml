@@ -1,50 +1,64 @@
 .row.mt-3
   .col-sm-7
-    #hero-section
-      Hero Section goes here
+    #hero-section{:onmouseover => 'handleMouseOverHeroSection()', :onmouseleave => 'handleMouseLeaveHeroSection()'}
+      = image_tag ('doctor.png'), {:id => 'hero-pic'}
+      #hero-overlay
+        Find out why more and more providers are signing up today.
+        .btn.btn-caredash-primary.hero-btn
+          Learn More
   .col-sm-5
     #sign-up-form
       = render 'main_pages/index_page/sign_up_form'
 .row.mt-5
   .col-sm-12
-    %h4.text-center Reasons to Sign Up as a Provider on CareDash
+    %h2.text-center Reasons to Sign Up as a Provider on CareDash
 .row.mt-4
   .col-sm-4
     .reason-to-sign-up-card.text-center
-      = image_tag ('logo.svg'), {:class => 'reasons-to-sign-up-img'}
+      = image_tag ('icon-promote.png'), {:class => 'reasons-to-sign-up-img'}
       .reasons-to-sign-up-header
-        Headline
+        Promote Your Practice
       .reasons-to-sign-up-body.text-left
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ac placerat vestibulum lectus mauris. Tempor orci dapibus ultrices
-        in. Quam quisque id diam vel quam elementum pulvinar etiam non.
-        Aliquam faucibus purus in massa tempor nec.
+        We provide you with the tools for success. Fortify your
+        practice through digital promotion, new patient engagement
+        and a passionate support team to guide you through every step.
       .text-left.mt-3
         .btn.btn-caredash-primary Learn More
   .col-sm-4
     .reason-to-sign-up-card.text-center
-      = image_tag ('logo.svg'), {:class => 'reasons-to-sign-up-img'}
+      = image_tag ('icon-reach.png'), {:class => 'reasons-to-sign-up-img'}
       .reasons-to-sign-up-header
-        Headline
+        Reach More Patients
       .reasons-to-sign-up-body.text-left
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ac placerat vestibulum lectus mauris. Tempor orci dapibus ultrices
-        in. Quam quisque id diam vel quam elementum pulvinar etiam non.
-        Aliquam faucibus purus in massa tempor nec.
+        Looking to boost your business? Your profile will appear
+        in top search engines like Google. We make it easy for new
+        patients to find you so that you can focus more on doing
+        what you enjoy.
       .text-left.mt-3
         .btn.btn-caredash-primary Learn More
   .col-sm-4
     .reason-to-sign-up-card.text-center
-      = image_tag ('logo.svg'), {:class => 'reasons-to-sign-up-img'}
+      = image_tag ('icon-track.png'), {:class => 'reasons-to-sign-up-img'}
       .reasons-to-sign-up-header
-        Headline
+        Track Your Results
       .reasons-to-sign-up-body.text-left
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ac placerat vestibulum lectus mauris. Tempor orci dapibus ultrices
-        in. Quam quisque id diam vel quam elementum pulvinar etiam non.
-        Aliquam faucibus purus in massa tempor nec.
+        How's your business doing? See for yourself! Our
+        analytics tracking helps you visualize your practice,
+        from generating new leads to keeping track of your patients.
       .text-left.mt-3
         .btn.btn-caredash-primary Learn More
+
+:javascript
+  const heroOverlay = document.getElementById('hero-overlay');
+  const heroImg = document.getElementById('hero-pic');
+
+  handleMouseOverHeroSection = () => {
+    heroImg.style.filter = 'brightness(60%)';
+    heroOverlay.style.display = 'block';
+    heroOverlay.style.left = '4rem';
+  }
+  handleMouseLeaveHeroSection = () => {
+    heroImg.style.filter = 'brightness(100%)';
+    heroOverlay.style.left = '-30rem';
+    heroOverlay.style.display = 'none';
+  }
