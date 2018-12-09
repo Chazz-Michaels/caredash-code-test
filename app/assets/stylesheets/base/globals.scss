@@ -36,3 +36,11 @@ body {
     border-color: darken($darkblue, 10%);
   }
 }
+.newpage {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  background-color: $darkblue;
+}

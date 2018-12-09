@@ -4,30 +4,38 @@
       .quick-links-section
         .footer-header
           CareDash
-        %a.footer-quick-link{ :href => '#'} Home
+        %a
+          = link_to "Home", root_path, :class => 'footer-quick-link'
         %br/
-        %a.footer-quick-link{ :href => '#'} About
+        %a
+          = link_to "About", main_pages_about_path, :class => 'footer-quick-link'
         %br/
-        %a.footer-quick-link{ :href => '#'} Contact
+        %a
+          = link_to "Contact", main_pages_contact_path, :class => 'footer-quick-link'
         %br/
-        %a.footer-quick-link{ :href => '#'} Write a Review
+        %a
+          = link_to "Write a Review", main_pages_review_path, :class => 'footer-quick-link'
       .quick-links-section
         .footer-header
           Specialists
-        %a.footer-quick-link{ :href => '#'} Primary Care Physicians
+        %a
+          = link_to "Primary Care Physicians", specialists_primary_care_physicians_path, :class => 'footer-quick-link'
         %br/
-        %a.footer-quick-link{ :href => '#'} Pediatricians
+        %a
+          = link_to "Pediatricians", specialists_pediatricians_path, :class => 'footer-quick-link'
         %br/
-        %a.footer-quick-link{ :href => '#'} Optometrists
+        %a
+          = link_to "Optometrists", specialists_optometrists_path, :class => 'footer-quick-link'
         %br/
-        %a.footer-quick-link{ :href => '#'} Dentists
+        %a
+          = link_to "Dentists", specialists_dentists_path, :class => 'footer-quick-link'
     .col-sm-4.text-center
       .footer-header
         Follow Us
         %br/
-      %a.i.fa.fa-facebook{ :href => '#'}
-      %a.i.fa.fa-twitter{ :href => '#'}
-      %a.i.fa.fa-instagram{ :href => '#'}
-      %a.i.fa.fa-github{ :href => '#'}
+      %a.i.fa.fa-facebook{ :href => 'https://www.facebook.com/caredash/', :target => 'blank'}
+      %a.i.fa.fa-twitter{ :href => 'https://twitter.com/caredash', :target => 'blank'}
+      %a.i.fa.fa-instagram{ :href => 'https://www.instagram.com/caredashcareers/', :target => 'blank'}
+      %a.i.fa.fa-github{ :href => 'https://github.com/Chazz-Michaels', :target => 'blank'}
   .row.text-center
     .col-sm-12.copyright Copyright 2017 CareDash &copy;

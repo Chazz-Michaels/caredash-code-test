@@ -49,15 +49,16 @@
         .btn.btn-caredash-primary Learn More
 
 :javascript
-  const heroOverlay = document.getElementById('hero-overlay');
-  const heroImg = document.getElementById('hero-pic');
-
   handleMouseOverHeroSection = () => {
+    const heroOverlay = document.getElementById('hero-overlay');
+    const heroImg = document.getElementById('hero-pic');
     heroImg.style.filter = 'brightness(60%)';
     heroOverlay.style.display = 'block';
     heroOverlay.style.left = '4rem';
   }
   handleMouseLeaveHeroSection = () => {
+    const heroOverlay = document.getElementById('hero-overlay');
+    const heroImg = document.getElementById('hero-pic');
     heroImg.style.filter = 'brightness(100%)';
     heroOverlay.style.left = '-30rem';
     heroOverlay.style.display = 'none';
